@@ -2,6 +2,7 @@ import App from '@/App.vue'
 import ElementPlus from 'element-plus'
 import GlobalComponent from '@/components'
 import router from './router'
+import pinia from './store'
 
 import 'element-plus/dist/index.css'
 import 'element-plus/dist/locale/zh-cn.mjs'
@@ -18,4 +19,5 @@ app.use(ElementPlus, {
 })
 app.use(GlobalComponent)
 app.use(router)
+app.use(pinia)
 app.mount('#app')
