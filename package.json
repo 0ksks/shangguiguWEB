@@ -15,7 +15,8 @@
     "fast-glob": "^3.3.2",
     "sass": "^1.76.0",
     "sass-loader": "^14.2.1",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.8",

@@ -5,5 +5,15 @@
     "htmlWhitespaceSensitivity": "ignore",
     "endOfLine": "auto",
     "trailingComma": "all",
-    "tabWidth": 2
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.vue",
+            "options": {
+                "htmlWhitespaceSensitivity": "css",
+                "vueIndentScriptAndStyle": true,
+                "tabWidth": 2
+            }
+        }
+    ]
 }
