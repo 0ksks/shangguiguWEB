@@ -1,32 +1,37 @@
-interface LoginData{
-    token:string
+interface LoginData {
+    token?: string
+    message?: string
 }
 
-interface UserData{
+interface UserData {
     User: {
-        userID: string,
-        avatar: string,
-        username: string,
-        password: string,
-        desc: string,
-        roles: string[],
-        buttons: string[],
-        routes: string[],
+        userID: string
+        avatar: string
+        username: string
+        password: string
+        desc: string
+        roles: string[]
+        buttons: string[]
+        routes: string[]
         token: string
     }
 }
 
-export interface LoginForm{
-    username: string,
+export interface LoginForm {
+    username: string
     password: string
 }
 
-export interface LoginResponse{
-    code: number,
+export interface LoginResponse {
+    code: number
     data: LoginData
 }
 
-export interface UserResponse{
-    code: number,
+export interface UserResponse {
+    code: number
     data: UserData
+}
+
+export interface LoginState {
+    token: string | null
 }

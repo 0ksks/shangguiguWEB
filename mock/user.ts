@@ -6,7 +6,10 @@ export default [
             const { username, password } = body
             if (username === 'admin' && password === '111111') {
                 let token = 'TOKEN'
-                return { code: 200, data: { token } }
+                return {
+                    code: 200,
+                    data: { token },
+                }
             }
             return {
                 code: 201,
