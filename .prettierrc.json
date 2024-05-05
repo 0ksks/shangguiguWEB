@@ -10,7 +10,6 @@
         {
             "files": "*.vue",
             "options": {
-                "htmlWhitespaceSensitivity": "css",
                 "vueIndentScriptAndStyle": true,
                 "tabWidth": 2
             }
