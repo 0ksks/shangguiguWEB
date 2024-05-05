@@ -6,7 +6,7 @@ export const constRoute = [
     },
     {
         path: '/',
-        component: () => import('@/layout/index.vue'),
+        component: () => import('@/views/layout/index.vue'),
         name: 'layout',
     },
     {

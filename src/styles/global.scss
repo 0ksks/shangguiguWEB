@@ -1,5 +1,11 @@
 // login
-$login_background_pic: url('@/assets/images/BTR.PNG');
-$login_form_color: rgba(255, 192, 203, 0.7);
+$login_background_pic:url('@/assets/images/BTR.PNG');
+$login_form_color:rgba(255, 192, 203, 0.7);
 $login_form_text_color:white;
 $login_button_text_color:white;
+
+//layout
+$menu-width:260px;
+$menu-background:blue;
+$tabbar-height:50px;
+$tabbar-background:pink;
