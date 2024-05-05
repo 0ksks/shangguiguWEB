@@ -7,20 +7,20 @@
         <el-form class="LoginForm" :model="loginForm" :rules="rules">
           <h1>Hello</h1>
           <h2>welcome</h2>
-          <el-form-item prop="username"
-            ><el-input
+          <el-form-item prop="username">
+            <el-input
               :prefix-icon="User"
               v-model="loginForm.username"
-            ></el-input
-          ></el-form-item>
-          <el-form-item prop="password"
-            ><el-input
+            ></el-input>
+          </el-form-item>
+          <el-form-item prop="password">
+            <el-input
               :prefix-icon="Lock"
               type="password"
               v-model="loginForm.password"
               show-password
-            ></el-input
-          ></el-form-item>
+            ></el-input>
+          </el-form-item>
           <el-form-item>
             <el-button
               type="primary"
@@ -60,11 +60,21 @@
   const rules = {
     username: [
       { required: true, message: 'required', trigger: 'blur' },
-      { min: 3, max: 10, message: 'length should be 3 to 10', trigger: 'blur' },
+      {
+        min: 3,
+        max: 10,
+        message: 'length should be 3 to 10',
+        trigger: 'blur',
+      },
     ],
     password: [
       { required: true, message: 'required', trigger: 'blur' },
-      { min: 3, max: 10, message: 'length should be 3 to 10', trigger: 'blur' },
+      {
+        min: 3,
+        max: 10,
+        message: 'length should be 3 to 10',
+        trigger: 'blur',
+      },
     ],
   }
 
@@ -93,7 +103,7 @@
         showClose: false,
         duration: 5000,
       })
-    } catch (error) {
+    } catch (error: any) {
       ElMessage({
         type: 'error',
         message: error.message,
